@@ -6,19 +6,13 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
       body {
-        background-color: #ffffff;
-        display: flex;
-        justify-content: center;
+        background-color: #ffffff
         align-items: center;
-        min-height: 100vh;
         margin: 0;
-        overflow: hidden;
       }
       model-viewer {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        aspect-ratio: 1 / 1;
+        width: 300px;  /* Fixed width to fit container */
+        height: 300px; /* Fixed height to fit container */
         background-color: transparent;
         overflow: hidden;
       }
@@ -29,14 +23,15 @@
       src="https://cdn.glitch.global/db19e61d-8511-4cd4-8913-d3f050a2faf8/bend.glb?v=1730892399333"
       camera-controls
       enable-pan
-      field-of-view="60deg"  
-      camera-orbit="0deg 75deg 3.5m"
+      field-of-view="75deg"  
+      camera-orbit="0deg 90deg 4m"  
       exposure="0.6"
       shadow-intensity="0"
       ar
       ar-modes="webxr scene-viewer quick-look"
       poster="poster.webp"
       autoplay
+      environment-image="https://cdn.glitch.global/db19e61d-8511-4cd4-8913-d3f050a2faf8/metal-shiny.jpg?v=1730902588427"
     ></model-viewer>
   </body>
 </html>
