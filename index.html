@@ -3,27 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
       model-viewer {
-        width: 500px; /* Adjust width as needed */
-        height: 500px; /* Adjust height as needed */
+        width: 100%;
+        max-width: 500px;
+        max-height: 500px;
+        margin: auto;
+        display: block;
+        width: 400px;
+        height: 380px;
       }
     </style>
   </head>
   <body>
+    <!-- Adjust the field-of-view to control zoom level -->
     <model-viewer
       bounds="tight"
       src="https://cdn.glitch.global/db19e61d-8511-4cd4-8913-d3f050a2faf8/bend.glb?v=1730892399333"
+                  
       camera-controls
       enable-pan
-      orientation="0 0 30deg"
-      exposure="0.9"  <!-- make the model darker by lowering the value -->
-      shadow-intensity="2"  <!-- Increase shadow for a stronger contrast -->
+      field-of-view="45deg"
+      exposure=".99"
+      shadow-intensity="0.1"
       ar
       ar-modes="webxr scene-viewer quick-look"
       poster="poster.webp"
-      autoplay></model-viewer>
+      autoplay
+    ></model-viewer>
   </body>
 </html>
