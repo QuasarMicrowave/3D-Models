@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <style>
+      body {
+        width: 400px;
+        height: 400px;
+      }
+      model-viewer {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="https://cdn.glitch.global/db19e61d-8511-4cd4-8913-d3f050a2faf8/crossguide%20coupler.glb?v=1733474185311"
+      camera-controls
+      auto-rotate
+      exposure="0.6"
+      shadow-intensity="0"
+      metallic="1"
+      ar
+      disable-zoom
+      ar-modes="webxr scene-viewer quick-look"
+      poster="poster.webp"
+      autoplay
+      environment-image="https://cdn.glitch.global/db19e61d-8511-4cd4-8913-d3f050a2faf8/TCom_Metal_AluminumBrushed_header.jpg?v=1732796106202"
+    ></model-viewer>
+  </body>
+</html>
